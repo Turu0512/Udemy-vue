@@ -1,7 +1,7 @@
 <template>
   <v-container fluid fill-height>
     
-    <v-navigation-drawer v-model="$store.state.drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
      <!-- drawerはサイドメニューのデフォルトの値、変更は上のv-btnで行っている -->
       <v-list>
         <v-list-item>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 export default {
   data () {
     return {
